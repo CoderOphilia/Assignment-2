@@ -14,7 +14,6 @@ body{
 /* Header styles */
 
 img{
-    display: block;
     width: 100%;
     height:400px
 }
@@ -84,3 +83,27 @@ a:hover{
     border-bottom: 3px solid rgb(111, 204, 57);
 }
 
+/* The form and price styling  */
+main{
+    margin-top: -20px;
+}
+.main1{
+    display: block;
+    float: left;
+    width: 75%;
+}
+
+.main2{
+    background-color: rgb(144, 170, 144);
+    font-size: 1.1em;  
+}
+
+/* Footer styling */
+footer{
+    clear: left;
+    background-color: rgb(42, 70, 42);
+    height: 40px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.5em;
+}
