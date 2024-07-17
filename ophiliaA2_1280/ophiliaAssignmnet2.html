@@ -14,8 +14,9 @@
 <body>
     <header>
         <img src="images/AnImage.png" alt="headerImage" /> <!-- HEADER IMAGE-->
-        <nav class="verticalNavigation">
-            <!--LINKS-->
+
+        <!--LINKS-->
+        <div class="header">
             <ul class="column1">
                 <li><a href="#">home page</a></li>
                 <li><a href="#">keynote address</a></li>
@@ -48,59 +49,61 @@
                 <li><a href="#">tour Sante Fe</a></li>
                 <li><a href="#">links</a></li>
             </ul>
-        </nav>
+
+        </div>
+
     </header>
 
     <main>
         <div class="main1">
             <form id="registration" action="www.a2.com" method="post" enctype="application/x-www-form-urlencoded">
                 <fieldset id="custInfo">
-    
+
                     <div id="form-title">
                         <h2 style="color: rgb(111, 204, 57)">Conference Registration Form</h2>
                         <p style="font-weight: bold;">Required Item (*)</p>
                     </div>
-    
+
                     <div class="formRow">
                         <label for="title">Title</label>
                         <input type="text" id="title" name="title">
                     </div>
-    
+
                     <div class="formRow">
                         <label for="first-name">First Name*</label>
                         <input type="text" id="first-name" name="first-name" required>
                     </div>
-    
+
                     <div class="formRow">
                         <label for="last-name">Last Name*</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </div>
-    
+
                     <div class="formRow">
                         <label for="address">Address*</label>
-                        <input type="text" id="address" name="address" required></input>
+                        <textarea   id="address" name="address" cols="10" rows="05" required></textarea>
                     </div>
-    
+
                     <div class="formRow">
                         <label for="company">Company or University</label>
                         <input type="text" id="company" name="company">
                     </div>
-    
+
                     <div class="formRow">
                         <label for="email">E-mail*</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-    
+
                     <div class="formRow">
                         <label for="phone">Phone Number*</label>
                         <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn" required>
                     </div>
-    
+
                     <div class="formRow">
                         <label for="membership-number">ACGIP Membership Number</label>
                         <input type="text" id="membership-number" name="membership-number" placeholder="acgip-nnnnn">
                     </div>
-    
+
                     <div class="formRow">
                         <label for="registration-category">Registration Category</label>
                         <select name="reg-cat" id="registration-category">
@@ -111,15 +114,15 @@
                             <option value="guest">$35</option>
                         </select>
                     </div>
-    
+
                     <input type="submit" name="submit" value="Continue">
                 </fieldset>
             </form>
-    
+
         </div>
 
         <div class="main2">
-            <aside>
+          
 
                 <dl>
                     <dt>ACGIP Member ($695)</dt>
@@ -127,14 +130,14 @@
                     <dt>Non-Member ($795)</dt>
                     <dd>Eligible to attend all sessions and banquet</dd>
                     <dt>Student ($310)</dt>
-                    <dd>Eligible to attend all sessions. <a href="#">Proof</a> of student status required</dd>
+                    <dd>Eligible to attend all sessions. <a href="#" style="color: yellow; text-decoration: underline;">Proof</a> of student status required</dd>
                     <dt>Poster ($95)</dt>
                     <dd>Eligible to attend display hall and vendor stations</dd>
                     <dt>Guest ($35)</dt>
                     <dd>Eligible to attend banquet only</dd>
                 </dl>
-    
-            </aside>
+
+          
         </div>
     </main>
 
