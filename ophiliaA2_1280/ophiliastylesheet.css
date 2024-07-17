@@ -19,13 +19,15 @@ img{
 }
 
 /* navigation link styles */
-nav.verticalNavigation {
+.header {
     background: linear-gradient(to bottom, black, rgb(42, 70, 42));
     display: flex;
-    font-size: 20px
+    font-size: 20px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
-nav.verticalNavigation ul{
+div> ul{
     text-decoration: none;
     list-style: none;
     list-style-image: none;
@@ -35,27 +37,11 @@ nav.verticalNavigation ul{
  padding-top: 20px;
 }
 
-.column2{
-    padding-left: 550px;
-}
 
 .column2 li:nth-child(3){
     padding-top: 20px;
 }
    
-.column3{
-    padding-left: 550px;
-}
-
-.column3 li:nth-child(5){
-    padding-top: 20px;
-   }
-   
-
-.column4{
-    padding-left: 550px;
-}
-
 
 a:link{
     color: white;
@@ -85,17 +71,57 @@ a:hover{
 
 /* The form and price styling  */
 main{
-    margin-top: -20px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
 }
-.main1{
-    display: block;
-    float: left;
-    width: 75%;
+.formRow{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    
 }
+
+.formRow >*{
+    flex-basis: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* padding-left: 20px; */
+}
+
 
 .main2{
     background-color: rgb(144, 170, 144);
-    font-size: 1.1em;  
+} 
+
+input[type="submit"]{
+    background-color: rgb(144, 170, 144) ;
+    color:rgb(245,245,165);
+    border-radius: 30px;
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left:300px
+    
+}
+
+/* Price information */
+
+dl{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px ;
+}
+
+dt{
+    border-bottom: 2px solid white;
+    font-size: 1 em;
+   
+}
+
+dd{
+    margin-bottom:15px;
+    font-size: 0.9em;
+    margin-left: 0;
 }
 
 /* Footer styling */
@@ -104,6 +130,7 @@ footer{
     background-color: rgb(42, 70, 42);
     height: 40px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 1.5em;
+    padding-bottom: 30px;
 }
